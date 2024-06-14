@@ -1,0 +1,232 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+.clogo{
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título del Home */
+h1 {
+  text-align: center;
+  color: #ff6f61;
+  margin-top: 0;
+  padding-top: 20px;
+  font-size: 2.5em;
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #ff6f61;
+  margin: 10px auto 20px auto;
+}
+
+/* Estilos para los formularios */
+form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form h2 {
+  color: #ff6f61;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="submit"] {
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ff6f61;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+}
+
+input[type="submit"] {
+  width: calc(100% - 20px);
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #e0524b;
+}
+
+/* Estilos para el contenedor de formularios */
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.form-item {
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-item form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para el botón de Logout */
+.logout-btn {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.logout-btn:hover {
+  background-color: #e0524b;
+}
+
+#auto-container {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.auto {
+  background-color: #272b40;
+  border-radius: 10px;
+  color: #eee;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*#auto-container :hover{
+  background-color: rgb(119, 144, 235);
+}*/
+
+#hotel-container {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*#hotel-container :hover{
+  background-color: rgb(119, 144, 235);
+}*/
+
+.hotel {
+  background-color: #272b40;
+  border-radius: 10px;
+  color: #eee;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.botoncin{
+  border-radius: 10px;
+  background-color: #ff6f61;
+  padding: 10px;
+  text-align: center;
+  align-items: center;  
+  font-family: Arial, sans-serif; 
+
+}
+.botoncin:hover{
+  background-color:#f9beb9;
+}
+
+#country-container {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.country {
+  background-color: #272b40;
+  border-radius: 10px;
+  color: #eee;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auto img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.auto h2 {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+
+.auto p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+/* Estilos para la disposición en dispositivos móviles */
+@media (max-width: 768px) {
+  .form-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  input[type="text"],
+  input[type="submit"] {
+      width: calc(100% - 20px);
+      margin: 8px 10px;
+  }
+
+  .form-item {
+      width: 100%;
+  }
+}

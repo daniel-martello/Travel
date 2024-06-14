@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Venta de viajes</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js" defer></script>
+  <script type="module" src="home.js" defer></script>
+  <script type="module" src="autos.js" defer></script>
+  <script type="module" src="hoteles.js" defer></script>
+</head>
+<body>
+  <h1>Home</h1>
+
+
+  <div class="form-container">
+    <div class="form-item">
+      <h2>Buscar Vuelos</h2>
+      <form id="search-flights">
+        <form>
+          <input type="text" id="country-name" placeholder="Ingrese desde donde desea partir"/>
+          <input type="submit" value="Buscar"/>
+        </form>
+        <div id="country-container">
+        </div>
+        <script src="home.js"></script>
+      </form>
+    </div>
+
+    <div class="form-item">
+      <h2>Buscar Vehículos</h2>
+      <form id="search-cars">
+        <input type="text" id="city-name" placeholder="Lugar de recogida" required/>
+        <input type="submit" value="Buscar"/>
+      </form>
+      <div id="auto-container"></div>
+      <script src="autos.js"></script>
+    </div>
+
+    <div class="form-item">
+      <h2>Buscar Hospedaje</h2>
+      <form id="search-hotel">
+        <label for="hotel-city-name"></label>
+        <input type="text" id="hotel-city-name" placeholder="Lugar de Hospedaje" name="hotel-city-name" required>
+        <input type="submit" value="Buscar"/>
+      </form>
+      <div id="hotel-container"></div>
+    </div>
+  </div>
+
+  <form action="/logout" method="POST">
+    <input type="submit" value="Logout" class="logout-btn">
+  </form>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
